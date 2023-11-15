@@ -90,7 +90,7 @@
               0H15V3H12V0ZM0 13H3V16H0V13Z" fill="var(--sparks-color)"/>
               </svg>
           </button>
-          <button class="card__like-button">
+          <button class="card__like-button text-button-decor">
             <span class="button__text">
               Like
             </span>
@@ -100,11 +100,11 @@
     </main>
     <script src="./scripts/like.js"></script>
     <footer class="footer">
-      <button class="card__icon-button footer__button"
+      <button class="card__icon-button footer__button text-button-decor"
         type="button"
         onclick="window['dialog__floppy'].showModal();"
         aria-controls="dialog__floppy">
-        <svg class="floppy" viewBox="0 0 39 39">
+        <svg class="floppy" viewBox="0 0 21 21">
           <use href="./svg/floppy.svg#floppy"></use>
         </svg>
         <span class="button__text">
@@ -112,16 +112,18 @@
         </span>
       </button>
     </footer>
-    <dialog id="dialog__floppy">
-      <svg class="floppy" viewBox="0 0 39 39">
-        <use href="./svg/floppy.svg#floppy"></use>
-      </svg>
-      <span class="dialog__floppy-text">
-        Вставьте дискету, чтобы продолжить
-      </span>
-      <button class=""
+    <dialog id="dialog__floppy" class="dialog__floppy">
+      <div class="dialog__info">
+        <svg class="floppy-dialog">
+          <use href="./svg/floppy.svg#floppy"></use>
+        </svg>
+        <span class="dialog__floppy-text">
+          Вставьте дискету, чтобы продолжить
+        </span>
+      </div>
+      <button class="dialog__button text-button-decor"
         type="button" 
-        onclick="window['dialog-id'].close()">OK</button>
+        onclick="window['dialog__floppy'].close()">OK</button>
       </form>
     </dialog>
   </body>
