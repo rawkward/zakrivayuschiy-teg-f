@@ -29,6 +29,7 @@
   align-items: center;
   margin-inline: clamp(0rem, 34.93vw - 8.187rem, 23.25rem);
   margin-block: 102px;
+  font-variation-settings: 'wght' var(--font-weight-p);
 }
 
 .header {
@@ -140,7 +141,7 @@ button[disabled="true"]::before {
 
 .content__card-title {
   display: flex;
-  font-weight: var(--font-weight-header);
+  font-variation-settings: 'wght' var(--font-weight-header);
   font-size: 18px;
   inline-size: 100%;
   padding: 5px 10px;
@@ -388,12 +389,18 @@ button[disabled="true"]::before {
   font-size: 14px;
   line-height: 1.5;
   color: var(--main-color);
+  border: 2px solid var(--main-color);
+  text-transform: uppercase;
+}
+
+.dialog__floppy::backdrop {
+  background-color: rgba(0, 0, 0, 0.75);
 }
 
 .dialog__info {
   display: flex;
   align-items: center;
-  gap: 30px;
+  gap: 20px;
 }
 
 .floppy-dialog {
@@ -402,9 +409,30 @@ button[disabled="true"]::before {
   flex-shrink: 0;
 }
 
+.dialog__button {
+  inline-size: 100%;
+  border: 2px solid var(--main-color);
+  padding: 9px 17px;
+  position: relative;
+}
+
 @media (width <= 375px) {
   
   .page {
     margin-inline: 0;
+  }
+
+  .header,
+  .content,
+  .footer {
+    inline-size: 100%;
+  }
+
+  .header {
+    margin-block-end: 97px;
+  }
+
+  .content__card-text {
+    margin-block-start: 22px;
   }
 }
