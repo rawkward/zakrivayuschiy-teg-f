@@ -425,7 +425,7 @@ button[disabled="true"]::before {
   .header,
   .content,
   .footer {
-    inline-size: 100%;
+    inline-size: calc(100% - 2px);
   }
 
   .header {
