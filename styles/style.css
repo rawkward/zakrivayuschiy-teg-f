@@ -21,7 +21,6 @@
   background-color: var(--bg-color);
   color: var(--main-color);
   background-image: var(--bg-image);
-  background-size: auto 100vh;
   background-repeat: no-repeat;
   background-attachment: fixed;
   display: flex;
@@ -420,6 +419,7 @@ button[disabled="true"]::before {
   
   .page {
     margin-inline: 0;
+    max-inline-size: 375px;
   }
 
   .header,
