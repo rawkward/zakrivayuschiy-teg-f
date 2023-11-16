@@ -422,6 +422,7 @@ button[disabled="true"]::before {
   .page {
     margin-inline: 0;
     max-inline-size: 100vw;
+    overflow-x: hidden;
   }
 
   .header,
