@@ -127,6 +127,7 @@ button[disabled="true"]::before {
 
 .content {
   inline-size: 100%;
+  margin-block-end: 54px;
 }
 
 .content__card {
@@ -134,7 +135,7 @@ button[disabled="true"]::before {
   background-color: var(--bg-color);
   font-family: var(--font-main), sans-serif;
   font-weight: var(--font-weight-p);
-  margin-block-end: 54px;
+  outline: 2px solid var(--main-color);
 }
 
 .content__card-title {
@@ -148,7 +149,7 @@ button[disabled="true"]::before {
 
 .content__image-container {
   position: relative;
-  border-block-end: 2px solid var(--main-color);
+  outline: 2px solid var(--main-color);
 }
 
 .content__card-image {
@@ -195,7 +196,7 @@ button[disabled="true"]::before {
   font-family: var(--font-accent), sans-serif;
   font-size: 14px;
   line-height: 0.9;
-  margin: 25px;
+  padding: 25px;
   justify-content: end;
   gap: 4px;
 }
@@ -426,6 +427,10 @@ button[disabled="true"]::before {
 
   .header {
     margin-block-end: 102px;
+    inline-size: calc(100% - 4px);
+  }
+
+  .content {
     inline-size: calc(100% - 4px);
   }
 
