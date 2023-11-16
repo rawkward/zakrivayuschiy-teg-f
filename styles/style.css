@@ -26,7 +26,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-inline: clamp(0rem, 34.93vw - 8.187rem, 23.25rem);
+  margin-inline: clamp(0.125rem, 34.774vw - 8.047rem, 23.25rem);
   margin-block: 102px;
   font-variation-settings: 'wght' var(--font-weight-p);
 }
@@ -39,10 +39,10 @@
   background-color: var(--bg-color);
   align-items: center;
   justify-content: center;
-  padding-block-start: clamp(7.5rem, 1.036vw + 7.257rem, 8.5rem);
+  padding-block-start: clamp(7.5rem, 1.504vw + 7.147rem, 8.5rem);
   padding-block-end: 25px;
   padding-inline: clamp(1rem, 6.731vw - 0.578rem, 7.5rem);
-  border: 2px solid var(--main-color);
+  outline: 2px solid var(--main-color);
   text-transform: uppercase;
   margin-block-end: 104px;
 }
@@ -149,11 +149,13 @@ button[disabled="true"]::before {
 
 .content__image-container {
   position: relative;
+  border-block-end: 2px solid var(--main-color);
 }
 
 .content__card-image {
   inline-size: 100%;
-  object-fit: contain;
+  object-fit: cover;
+  display: block;
 }
 
 .content__card-label {
@@ -389,7 +391,7 @@ button[disabled="true"]::before {
   font-size: 14px;
   line-height: 1.5;
   color: var(--main-color);
-  border: 2px solid var(--main-color);
+  outline: 2px solid var(--main-color);
   text-transform: uppercase;
 }
 
@@ -423,21 +425,13 @@ button[disabled="true"]::before {
     inline-size: 100%;
   }
 
-  .header,
-  .content {
-    inline-size: calc(100% - 8px);
-  }
-
   .header {
-    margin-block-end: 97px;
+    margin-block-end: 102px;
+    inline-size: calc(100% - 4px);
   }
 
   .header__logo {
     font-size: clamp(2.5rem, -0.7727rem + 16.3636vw, 3.0625rem);
-  }
-
-  .content__card-text {
-    margin-block-start: 22px;
   }
 
   .footer {
