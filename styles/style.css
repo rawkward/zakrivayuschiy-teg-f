@@ -422,7 +422,6 @@ button[disabled="true"]::before {
   .page {
     margin-inline: 0;
     max-inline-size: 100vw;
-    overflow-x: hidden;
   }
 
   .header,
@@ -432,6 +431,10 @@ button[disabled="true"]::before {
 
   .header {
     margin-block-end: 97px;
+  }
+
+  .header__logo {
+    font-size: clamp(2.5rem, -0.7727rem + 16.3636vw, 3.0625rem);
   }
 
   .content__card-text {
