@@ -23,6 +23,7 @@
   background-image: var(--bg-image);
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-size: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -244,6 +245,7 @@ button[disabled="true"]::before {
 .text-button-decor {
   box-shadow: 0 0 0 transparent;
   transition: box-shadow 0.3s ease;
+  font-size: 14px;
 }
 
 .text-button-decor::after {
@@ -419,12 +421,11 @@ button[disabled="true"]::before {
   
   .page {
     margin-inline: 0;
-    max-inline-size: 375px;
+    max-inline-size: 100vw;
   }
 
   .header,
-  .content,
-  .footer {
+  .content {
     inline-size: calc(100% - 2px);
   }
 
@@ -434,5 +435,14 @@ button[disabled="true"]::before {
 
   .content__card-text {
     margin-block-start: 22px;
+  }
+
+  .footer {
+    margin-inline: 35px;
+  }
+
+  .footer__button {
+    flex-direction: column;
+    padding-inline: 10px;
   }
 }
