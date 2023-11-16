@@ -136,6 +136,7 @@ button[disabled="true"]::before {
   font-family: var(--font-main), sans-serif;
   font-weight: var(--font-weight-p);
   outline: 2px solid var(--main-color);
+  border-block-start: 2px solid var(--main-color);
 }
 
 .content__card-title {
