@@ -191,7 +191,7 @@ button[disabled="true"]::before {
 }
 
 .gif-tired {
-  filter: blur(3px) contrast(120%);
+  filter: blur(2px) contrast(120%);
 }
 
 .content__card-label {
