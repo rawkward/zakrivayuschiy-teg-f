@@ -126,6 +126,9 @@ button[disabled="true"]::before {
 }
 
 .content {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
   inline-size: 100%;
   margin-block-end: 54px;
 }
@@ -154,8 +157,41 @@ button[disabled="true"]::before {
 
 .content__card-image {
   inline-size: 100%;
+  aspect-ratio: 1/1;
   object-fit: cover;
   display: block;
+}
+
+.image-car {
+  filter: sepia(60%) opacity(80%);
+}
+
+.gif-maths {
+  filter: saturate(200%) hue-rotate(75deg);
+}
+
+.gif-not-bad {
+  filter: brightness(130%);
+}
+
+.gif-thinking {
+  filter: contrast(125%) saturate(50%);
+}
+
+.gif-jackie {
+  filter: invert(15%) saturate(150%);
+}
+
+.gif-explode {
+  filter: grayscale(100%);
+}
+
+.gif-crying {
+  filter: contrast(75%) saturate(125%);
+}
+
+.gif-tired {
+  filter: blur(3px) contrast(120%);
 }
 
 .content__card-label {
@@ -164,6 +200,7 @@ button[disabled="true"]::before {
   right: clamp(0.688rem, 1.315vw + 0.379rem, 1.563rem);
   font-family: var(--font-accent);
   font-size: 14px;
+  text-transform: uppercase;
   opacity: 0.5;
   mix-blend-mode: hard-light;
   text-shadow:
