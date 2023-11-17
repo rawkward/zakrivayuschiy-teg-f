@@ -162,12 +162,12 @@ button[disabled="true"]::before {
   display: block;
 }
 
-.image-car {
+.image-car-sepia-opac {
   filter: sepia(60%) opacity(80%);
 }
 
-.gif-maths {
-  filter: saturate(200%) hue-rotate(75deg);
+.image-car-hue-sat {
+  filter: saturate(110%) hue-rotate(75deg);
 }
 
 .gif-not-bad {
