@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="color-scheme" content="dark light">
+    <meta name="color-scheme" content="light dark">
     <title>Закрывающий тег</title>
     <link rel="icon" href="./images/favicon.ico" sizes="16x16">
     <link rel="icon" href="./svg/favicon.svg" type="image/svg+xml">
@@ -18,12 +18,12 @@
   </head>
   <body class="page">
     <header class="header">
-      <h1 class="header__logo">
+      <a class="header__logo">
         &lt;/HTML&gt;
-      </h1>
-      <h2 class="header__title">
+      </a>
+      <h1 class="header__title">
         Закрывающий тег
-      </h2>
+      </h1>
       <nav class="theme-menu header__theme-menu">
         <!-- Не меняйте разметку этого списка, иначе скрипты перестанут работать -->
         <ul class="theme-menu__list">
@@ -52,18 +52,18 @@
     </header>
     <main class="content">
       <article class="content__card">
-        <h3 class="content__card-title">
+        <h2 class="content__card-title">
           Фритрек и нулевой спринт: Подготовка к работе
-        </h3>
-        <div class="content__image-container">
+        </h2>
+        <figure class="content__image-container">
           <img class="content__card-image image-car-sepia-opac"
             src="./images/8bit-car.png"
             alt="Картинка с домом на колесах в восьмибитном стиле"
             loading="lazy">
-          <span class="content__card-label">
+          <figcaption class="content__card-label">
             &lt;/HTML&gt;
-          </span>
-        </div>
+          </figcaption>
+        </figure>
         <div class="content__card-text">
           <p class="content__card-p">
             Это было самое начало пути. На этом этапе важно было проникнуться основами и настроиться на учёбу.
@@ -74,8 +74,11 @@
           </p>
         </div>
         <div class="content__card-interaction">
-          <button class="card__icon-button heart-button">
-            <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <button type="button" class="card__icon-button heart-button" aria-labelledby="like-button">
+            <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36"
+              fill="none" 
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true">
               <g class="heart">
                 <path class="contour" d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15
                 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21
@@ -90,7 +93,7 @@
               0H15V3H12V0ZM0 13H3V16H0V13Z" fill="var(--sparks-color)"/>
               </svg>
           </button>
-          <button class="card__like-button text-button-decor">
+          <button class="card__like-button button" id="like-button">
             <span class="button__text">
               Like
             </span>
@@ -98,18 +101,18 @@
         </div>
       </article>
       <article class="content__card">
-        <h3 class="content__card-title">
+        <h2 class="content__card-title">
           1 спринт: Я — чистый лист
-        </h3>
-        <div class="content__image-container">
+        </h2>
+        <figure class="content__image-container">
           <img class="content__card-image image-car-hue-sat"
             src="./images/8bit-car.png"
             alt="Картинка с домом на колесах в восьмибитном стиле"
             loading="lazy">
-          <span class="content__card-label">
+          <figcaption class="content__card-label">
             А как?
-          </span>
-        </div>
+          </figcaption>
+        </figure>
         <div class="content__card-text">
           <p class="content__card-p">
             На первых этапах мы работали со страхами и сомнениями, которые часто испытывают новички. Один из них — страх
@@ -121,8 +124,11 @@
           </p>
         </div>
         <div class="content__card-interaction">
-          <button class="card__icon-button heart-button">
-            <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <button type="button" class="card__icon-button heart-button" aria-labelledby="like-button">
+            <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true">
               <g class="heart">
                 <path class="contour" d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15
                 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21
@@ -137,7 +143,7 @@
               0H15V3H12V0ZM0 13H3V16H0V13Z" fill="var(--sparks-color)"/>
               </svg>
           </button>
-          <button class="card__like-button text-button-decor">
+          <button class="card__like-button button">
             <span class="button__text">
               Like
             </span>
@@ -145,18 +151,18 @@
         </div>
       </article>
       <article class="content__card">
-        <h3 class="content__card-title">
+        <h2 class="content__card-title">
           1 спринт: А если не получится?
-        </h3>
-        <div class="content__image-container">
+        </h2>
+        <figure class="content__image-container">
           <img class="content__card-image gif-not-bad"
             src="./images/not-bad.gif"
             alt="GIF-анимация с впечатленным Джеймсом Корденом"
             loading="lazy">
-          <span class="content__card-label">
+          <figcaption class="content__card-label">
             Начало положено
-          </span>
-        </div>
+          </figcaption>
+        </figure>
         <div class="content__card-text">
           <p class="content__card-p">
             Первый проект — позади! Но это всё ещё самое начало пути. Радость могла быстро померкнуть и смениться
@@ -167,8 +173,11 @@
           </p>
         </div>
         <div class="content__card-interaction">
-          <button class="card__icon-button heart-button">
-            <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <button type="button" class="card__icon-button heart-button" aria-labelledby="like-button">
+            <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true">
               <g class="heart">
                 <path class="contour" d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15
                 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21
@@ -183,7 +192,7 @@
               0H15V3H12V0ZM0 13H3V16H0V13Z" fill="var(--sparks-color)"/>
               </svg>
           </button>
-          <button class="card__like-button text-button-decor">
+          <button class="card__like-button button">
             <span class="button__text">
               Like
             </span>
@@ -191,18 +200,18 @@
         </div>
       </article>
       <article class="content__card">
-        <h3 class="content__card-title">
+        <h2 class="content__card-title">
           2 спринт: Погоня за идеалом
-        </h3>
-        <div class="content__image-container">
+        </h2>
+        <figure class="content__image-container">
           <img class="content__card-image gif-thinking"
             src="./images/thinking.gif"
             alt="GIF-анимация с задумчивым мужчиной"
             loading="lazy">
-          <span class="content__card-label">
+          <figcaption class="content__card-label">
             Семантичненько
-          </span>
-        </div>
+          </figcaption>
+        </figure>
         <div class="content__card-text">
           <p class="content__card-p">
             На этом этапе вы уже достаточно разбирались в основах вёрстки, чтобы понять, как много ещё впереди.
@@ -214,8 +223,11 @@
           </p>
         </div>
         <div class="content__card-interaction">
-          <button class="card__icon-button heart-button">
-            <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <button type="button" class="card__icon-button heart-button" aria-labelledby="like-button">
+            <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true">
               <g class="heart">
                 <path class="contour" d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15
                 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21
@@ -230,7 +242,7 @@
               0H15V3H12V0ZM0 13H3V16H0V13Z" fill="var(--sparks-color)"/>
               </svg>
           </button>
-          <button class="card__like-button text-button-decor">
+          <button class="card__like-button button">
             <span class="button__text">
               Like
             </span>
@@ -238,18 +250,18 @@
         </div>
       </article>
       <article class="content__card">
-        <h3 class="content__card-title">
+        <h2 class="content__card-title">
           2 спринт: О тех, кто рядом
-        </h3>
-        <div class="content__image-container">
+        </h2>
+        <figure class="content__image-container">
           <img class="content__card-image gif-jackie"
             src="./images/jackie.gif"
             alt="GIF-анимация с радующимся Джеки из Cyberpunk 2077"
             loading="lazy">
-          <span class="content__card-label">
+          <figcaption class="content__card-label">
             EZ!
-          </span>
-        </div>
+          </figcaption>
+        </figure>
         <div class="content__card-text">
           <p class="content__card-p">
             Всё это время вы были не одиноки (хотя, возможно, иногда и чувствовали, что одни против целого мира).
@@ -261,8 +273,11 @@
           </p>
         </div>
         <div class="content__card-interaction">
-          <button class="card__icon-button heart-button">
-            <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <button type="button" class="card__icon-button heart-button" aria-labelledby="like-button">
+            <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true">
               <g class="heart">
                 <path class="contour" d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15
                 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21
@@ -277,7 +292,7 @@
               0H15V3H12V0ZM0 13H3V16H0V13Z" fill="var(--sparks-color)"/>
               </svg>
           </button>
-          <button class="card__like-button text-button-decor">
+          <button class="card__like-button button">
             <span class="button__text">
               Like
             </span>
@@ -285,18 +300,18 @@
         </div>
       </article>
       <article class="content__card">
-        <h3 class="content__card-title">
+        <h2 class="content__card-title">
           3 спринт: Обходные стратегии
-        </h3>
-        <div class="content__image-container">
+        </h2>
+        <figure class="content__image-container">
           <img class="content__card-image gif-explode"
             src="./images/explode.gif"
             alt="GIF-анимация, на которой из головы мужчины исходит вспышка"
             loading="lazy">
-          <span class="content__card-label">
+          <figcaption class="content__card-label">
             Чтооооо
-          </span>
-        </div>
+          </figcaption>
+        </figure>
         <div class="content__card-text">
           <p class="content__card-p">
             На этом курсе вы постоянно решали разные задачи. В какой-то момент вам могло показаться, что решения просто
@@ -307,8 +322,11 @@
           </p>
         </div>
         <div class="content__card-interaction">
-          <button class="card__icon-button heart-button">
-            <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <button type="button" class="card__icon-button heart-button" aria-labelledby="like-button">
+            <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true">
               <g class="heart">
                 <path class="contour" d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15
                 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21
@@ -323,7 +341,7 @@
               0H15V3H12V0ZM0 13H3V16H0V13Z" fill="var(--sparks-color)"/>
               </svg>
           </button>
-          <button class="card__like-button text-button-decor">
+          <button class="card__like-button button">
             <span class="button__text">
               Like
             </span>
@@ -331,18 +349,18 @@
         </div>
       </article>
       <article class="content__card">
-        <h3 class="content__card-title">
+        <h2 class="content__card-title">
           3 спринт: Когда опускаются руки
-        </h3>
-        <div class="content__image-container">
+        </h2>
+        <figure class="content__image-container">
           <img class="content__card-image gif-crying"
             src="./images/crying.gif"
             alt="GIF-анимация с плачущим Уиллом Фаррелом, который пытается пить вино"
             loading="lazy">
-          <span class="content__card-label">
+          <figcaption class="content__card-label">
             *яростно кряхтит*
-          </span>
-        </div>
+          </figcaption>
+        </figure>
         <div class="content__card-text">
           <p class="content__card-p">
             Во время учёбы часто возникает чувство, когда не знаешь, за что хвататься. Вроде и проектную пора сдавать,
@@ -354,8 +372,11 @@
           </p>
         </div>
         <div class="content__card-interaction">
-          <button class="card__icon-button heart-button">
-            <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <button type="button" class="card__icon-button heart-button" aria-labelledby="like-button">
+            <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true">
               <g class="heart">
                 <path class="contour" d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15
                 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21
@@ -370,7 +391,7 @@
               0H15V3H12V0ZM0 13H3V16H0V13Z" fill="var(--sparks-color)"/>
               </svg>
           </button>
-          <button class="card__like-button text-button-decor">
+          <button class="card__like-button button">
             <span class="button__text">
               Like
             </span>
@@ -378,18 +399,18 @@
         </div>
       </article>
       <article class="content__card">
-        <h3 class="content__card-title">
+        <h2 class="content__card-title">
           «Сейчас я здесь»
-        </h3>
-        <div class="content__image-container">
+        </h2>
+        <figure class="content__image-container">
           <img class="content__card-image gif-tired"
             src="./images/tired.gif"
             alt="GIF-анимация падающим Макйлом Серой"
             loading="lazy">
-          <span class="content__card-label">
+          <figcaption class="content__card-label">
             А как спать?
-          </span>
-        </div>
+          </figcaption>
+        </figure>
         <div class="content__card-text">
           <p class="content__card-p">
             Сейчас вы уже очень много знаете о вёрстке. Но это только начало. Во-первых, впереди ещё много материала
@@ -402,8 +423,11 @@
           </p>
         </div>
         <div class="content__card-interaction">
-          <button class="card__icon-button heart-button">
-            <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <button type="button" class="card__icon-button heart-button" aria-labelledby="like-button">
+            <svg class="like-icon" width="39" height="36" viewBox="0 0 39 36"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true">
               <g class="heart">
                 <path class="contour" d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15
                 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21
@@ -418,44 +442,44 @@
               0H15V3H12V0ZM0 13H3V16H0V13Z" fill="var(--sparks-color)"/>
               </svg>
           </button>
-          <button class="card__like-button text-button-decor">
+          <button class="card__like-button button">
             <span class="button__text">
               Like
             </span>
           </button>
         </div>
       </article>
+      <script src="./scripts/like.js"></script>
+      <div class="content__save-section">
+        <button class="card__icon-button save-section__button button"
+          type="button"
+          onclick="window['dialog__floppy'].showModal();"
+          aria-controls="dialog__floppy">
+          <svg class="floppy" viewBox="0 0 39 39">
+            <use href="./svg/floppy.svg#floppy"></use>
+          </svg>
+          <span class="button__text">
+            Сохранить на память
+          </span>
+        </button>
+      </div>
     </main>
-    <script src="./scripts/like.js"></script>
-    <footer class="footer">
-      <button class="card__icon-button footer__button text-button-decor"
-        type="button"
-        onclick="window['dialog__floppy'].showModal();"
-        aria-controls="dialog__floppy">
-        <svg class="floppy" viewBox="0 0 39 39">
-          <use href="./svg/floppy.svg#floppy"></use>
-        </svg>
-        <span class="button__text">
-          Сохранить на память
-        </span>
-      </button>
-    </footer>
     <dialog id="dialog__floppy" class="dialog__floppy">
       <div class="dialog__info">
         <svg class="floppy-dialog" viewBox="0 0 39 39">
           <use href="./svg/floppy.svg#floppy"></use>
         </svg>
-        <span class="dialog__floppy-text">
+        <p class="dialog__floppy-text">
           Вставьте дискету, чтобы продолжить
-        </span>
+        </p>
       </div>
-      <button class="dialog__button text-button-decor"
-        type="button" 
-        onclick="window['dialog__floppy'].close()">
-        <span class="button__text">
-          OK
-        </span>
-      </button>
+      <form class="dialog__form" method="dialog">
+        <button class="dialog__button button" type="submit">
+          <span class="button__text">
+            OK
+          </span>
+        </button>
+      </form>
     </dialog>
   </body>
 </html>
