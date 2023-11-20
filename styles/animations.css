@@ -49,6 +49,7 @@
 
 .like-icon .contour {
   fill: var(--contour-color);
+  transition: fill 0.1s linear;
 }
 
 .like-icon .main-body {
@@ -58,7 +59,7 @@
 
 .like-icon .core {
   fill: transparent;
-  transition: fill 0.3s 0.05s linear;
+  transition: fill 0.3s 0.03s linear;
 }
 
 .like-icon .sparks {
